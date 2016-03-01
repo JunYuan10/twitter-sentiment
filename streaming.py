@@ -11,6 +11,8 @@ except ImportError:
 from twitter import Twitter, OAuth, TwitterHTTPError, TwitterStream
 from prettytable import PrettyTable
 
+#use this function to store your tweet into mongodb
+
 def save_to_mongo(data, mongo_db, mongo_db_coll, **mongo_conn_kw):
 
     client = pymongo.MongoClient(**mongo_conn_kw)
