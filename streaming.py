@@ -1,3 +1,9 @@
+"""
+Collect tweets from twitter bu using Streaming API. 
+Notice that Streaming API only collect real-time tweets, which means that we don't know how many sentiment twetts we can collect at each time.
+So, we should run this program for several times until dataset is enough for you.
+"""
+
 import pymongo
 import time
 import datetime

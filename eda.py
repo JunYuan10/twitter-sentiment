@@ -1,5 +1,5 @@
 """
-realize eda process to tweets
+realize eda process to tweets and compare the results with Gutenberg text, such as average words and lexical diversity
 
 """
 import pymongo
@@ -136,6 +136,6 @@ for document in texts_filtered:
             all_words.append(word.lower())
 
 all_words2 = nltk.FreqDist(w.lower() for w in all_words)
-#all_words2.plot(100, cumulative=False)
+all_words2.plot(100, cumulative=False)
 wordlist = [fpair[0] for fpair in list(all_words2.most_common(13000))]
-#print 'length of Wordlist', len(wordlist)
+print 'length of Wordlist', len(wordlist)

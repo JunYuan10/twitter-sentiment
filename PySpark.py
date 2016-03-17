@@ -1,3 +1,9 @@
+"""
+Notice that this program is for PySpark which handle 1 million tweets.
+1.Read train set and data set from txt files.
+2.Put data set into Spark system, and transform them into RDD.
+3.Run the bayse algorithm from MLlib. 
+"""
 from pyspark.mllib.classification import NaiveBayes
 from pyspark.mllib.linalg import Vectors
 from pyspark.mllib.regression import LabeledPoint
